@@ -33,9 +33,9 @@
 			<key>IOAudioStreamDirection</key>
 			<integer>1</integer>
 			<key>idProduct</key>
-			<integer>1967</integer>
+			<integer>8321</integer>
 			<key>idVendor</key>
-			<integer>1917</integer>
+			<integer>1891</integer>
 		</dict>
 		<key>SampleUSBAudioOutputStreamPlugin</key>
 		<dict>
@@ -50,9 +50,9 @@
 			<key>IOAudioStreamDirection</key>
 			<integer>0</integer>
 			<key>idProduct</key>
-			<integer>1967</integer>
+			<integer>8321</integer>
 			<key>idVendor</key>
-			<integer>1917</integer>
+			<integer>1891</integer>
 		</dict>
 	</dict>
 	<key>OSBundleLibraries</key>
