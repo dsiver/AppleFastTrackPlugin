@@ -66,6 +66,8 @@
 #include "SampleUSBAudioPlugin.h"
 
 #define super AppleUSBAudioPlugin
+#define VENDOR_ID 0x0763
+#define PRODUCT_ID 0x2081
 
 OSDefineMetaClassAndStructors (com_MySoftwareCompany_driver_SampleUSBAudioPlugin, AppleUSBAudioPlugin);
 
@@ -93,7 +95,7 @@ IOReturn com_MySoftwareCompany_driver_SampleUSBAudioPlugin::pluginInit (IOServic
 #warning   Change the idVendor & idProduct here (and in Info.plist) to match the audio device you want to use! 
 	// Double check that we're loaded on the device that we want to be;
 
-	if (vendorID != 0x077D || productID != 0x07AF)
+	if (vendorID != VENDOR_ID || productID != PRODUCT_ID)
 	{
 		//NOTE: Avoid logging this type of information (idVendor, idProduct) in a released product
 		//The plug-in should fail silently, if the incorrect (idVendor, idProduct) is given.
