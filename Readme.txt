@@ -1,9 +1,13 @@
 SampleUSBAudioPlugin
 
-This project provides an example of how to write a simple USB audio plug-in.  This plug-in performs a lowpass filtering operation on both an input and output audio stream.
+This project provides an example of how to write a simple USB audio plug-in.  This plug-in performs a lowpass filtering
+operation on both an input and output audio stream.
 
-To specify a specific audio device for this sample code project to use, you will need to modify the project's Info.plist file and pluginInit() routine in SampleUSBAudioPlugin.cpp.
-You must modify the IOPropertyMatch key in Info.plist. These values must be changed to match to your device.  Modify the Info.plist entry IOPropertyMatch to match to the hex values of the idVendor and idProduct of your device.  Do the same for vendorID & productID in SampleUSBAudioPlugin.cpp.
+To specify a specific audio device for this sample code project to use, you will need to modify the project's Info.plist
+file and pluginInit() routine in SampleUSBAudioPlugin.cpp.
+You must modify the IOPropertyMatch key in Info.plist. These values must be changed to match to your device.  Modify the
+Info.plist entry IOPropertyMatch to match to the hex values of the idVendor and idProduct of your device.  Do the same
+for vendorID & productID in SampleUSBAudioPlugin.cpp.
 
 You can discover these values by using developer applications like IORegistryExplorer or USBProber.
 You will also need to change these values in  SampleUSBAudioPlugin::pluginInit(..).
